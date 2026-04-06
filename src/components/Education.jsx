@@ -11,7 +11,7 @@ import {
     FaCalculator,
 } from "react-icons/fa";
 
-// need to be added
+
 import {
     FiChevronDown,
     FiChevronUp,
@@ -50,6 +50,10 @@ export default function Education() {
        { label: "Logic Design", icon: FaBrain},
        { label: "Computer Architecture", icon: FaCogs },
        { label: "Discrete I", icon: FaCalculator },
+       { label: "Discrete II", icon: FaCalculator },
+       { label: "Operating Systems", icon: FaCogs },
+       { label: "Foundations of Computer Science", icon: FaCode },
+       { label: "Computing for Health and Medicine", icon: FaMicrochip },
     ]
 
     const recentClasses = classes.slice(-3);

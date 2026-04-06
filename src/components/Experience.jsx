@@ -17,7 +17,7 @@ export default function Experience() {
       title: "Intern - Android/IOS Developer",
       company: "Uplifty AI",
       location: "Remote",
-      duration: "Nov 2025 - Present",
+      duration: "Nov 2025 - April 2026",
       description:
         "Worked on developing mobile applications using React Native. Used Android Studio for building and testing apps. Collaborated with a team of developers to implement new features and fix bugs.",
       icons: [FaReact, SiAndroidstudio, FaGithub]
