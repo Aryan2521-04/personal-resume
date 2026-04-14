@@ -46,7 +46,7 @@ export default function About() {
     },
     {
       label: "Resume",
-      href: "/Aryaman_shah-5.pdf",
+      href: "/Aryaman_shah-6.pdf",
       icon: FaFileAlt,
       style: "bg-blue-600 text-white hover:bg-blue-700",
       download: true,
