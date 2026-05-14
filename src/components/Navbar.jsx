@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <nav className="flex flex-wrap justify-between items-center py-5 px-8 bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
       
-      <h1 className="text-xl font-bold">Aryan Shah</h1>
+      <h1 className="text-xl font-bold">Aryaman Shah</h1>
 
       {/* Desktop links */}
       <div className="hidden md:flex space-x-6">
