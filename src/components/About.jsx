@@ -46,7 +46,7 @@ export default function About() {
     },
     {
       label: "Resume",
-      href: "/Aryaman_shah-6.pdf",
+      href: "/Resume_Aryaman_Shah_Software_Engineer_2026-07.pdf",
       icon: FaFileAlt,
       style: "bg-blue-600 text-white hover:bg-blue-700",
       download: true,
