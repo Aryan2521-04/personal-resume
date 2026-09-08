@@ -36,6 +36,8 @@ export default function About() {
       icon: FaLinkedin,
       style:
         "border border-blue-600 text-blue-600 hover:bg-blue-50",
+      target: "_blank",
+      rel: "noopener noreferrer",
     },
     {
       label: "GitHub",
@@ -43,6 +45,8 @@ export default function About() {
       icon: FaGithub,
       style:
         "border border-blue-600 text-blue-600 hover:bg-blue-50",
+      target: "_blank",
+      rel: "noopener noreferrer",
     },
     {
       label: "Resume",
@@ -124,6 +128,8 @@ export default function About() {
                     key={btn.label}
                     href={btn.href}
                     download={btn.download}
+                    target={btn.target}
+                    rel={btn.rel}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: i * 0.15, duration: 0.01 }}
