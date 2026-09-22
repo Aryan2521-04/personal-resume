@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { FaPython, FaGithub} from "react-icons/fa";
-import { SiScikitlearn } from "react-icons/si";
+import { FaPython, FaGithub, FaReact} from "react-icons/fa";
+import { SiScikitlearn, SiFastapi, SiSqlalchemy} from "react-icons/si";
 
 export default function Projects() {
   const fadeSlide = {
@@ -12,10 +12,17 @@ export default function Projects() {
     },
   };
 
-  const icons = [
+  const icons_smart = [
     { Icon: FaPython },
     { Icon: SiScikitlearn },
   ];
+
+  const icons_funds = [
+    { Icon: SiSqlalchemy},
+    { Icon: SiFastapi},
+    { Icon: FaReact}
+  ];
+  
 
   return (
     <section
@@ -61,7 +68,7 @@ export default function Projects() {
 
             {/* Icon Row */}
             <div className="flex gap-4 text-blue-600 text-3xl">
-              {icons.map(({ Icon }, i) => (
+              {icons_smart.map(({ Icon }, i) => (
                 <Icon key={i} className="drop-shadow-sm" />
               ))}
             </div>
@@ -94,22 +101,24 @@ export default function Projects() {
           {/* Text Content */}
           <div className="flex flex-col items-center space-y-4 py-6 px-6 text-center">
 
-            <h2 className="text-xl font-bold">Coming Soon</h2>
+            <h2 className="text-xl font-bold">Fund Lab</h2>
 
             <p className="text-sm text-gray-600 px-2">
-             Another project, in the works.
+             A fund performance dashboard computing IRR/TVPI/DPI from irregular cash flow data. Built with SQLAlchemy, FastAPI, and React.
             </p>
 
-            {/* Icon Row 
+            {/*Icon Row*/ }
             <div className="flex gap-4 text-blue-600 text-3xl">
-              {icons.map(({ Icon }, i) => (
+              {icons_funds.map(({ Icon }, i) => (
                 <Icon key={i} className="drop-shadow-sm" />
               ))}
             </div>
-            */}
-            {/* GitHub Button 
+            
+            {/* GitHub Button */}
             <motion.a
-              href="https://github.com/Aryan2521-04"
+                href="https://github.com/Aryan2521-04/fund-performance-dashboard.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
               whileHover={{
                 scale: 1.08,
                 boxShadow: "0px 8px 15px rgba(59, 130, 246, 0.3)",
@@ -119,11 +128,6 @@ export default function Projects() {
               <FaGithub className="text-lg" />
               GitHub
             </motion.a>
-            */}
-
-            <span className="flex items-center gap-2 rounded-lg px-4 py-2 font-medium border border-gray-300 text-gray-400 bg-gray-50 cursor-not-allowed select-none">
-              🔒 Coming Soon
-            </span>
           </div>
         </motion.div>
       </div>

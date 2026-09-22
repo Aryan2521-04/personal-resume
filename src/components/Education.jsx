@@ -9,6 +9,9 @@ import {
     FaProjectDiagram,
     FaBrain,
     FaCalculator,
+    FaDatabase,
+    FaGlasses,
+    FaRobot,
 } from "react-icons/fa";
 
 
@@ -54,6 +57,9 @@ export default function Education() {
        { label: "Operating Systems", icon: FaCogs },
        { label: "Foundations of Computer Science", icon: FaCode },
        { label: "Computing for Health and Medicine", icon: FaMicrochip },
+       { label: "Database I", icon: FaDatabase},
+       { label: "Analysis of Algorithms", icon: FaGlasses},
+       { label: "Machine Learning",icon: FaRobot },
     ]
 
     const recentClasses = classes.slice(-3);
